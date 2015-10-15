@@ -455,6 +455,8 @@ class AsyncSSLSocket : public virtual AsyncSocket {
    */
   int getSSLCertSize() const;
 
+  const char *getSSLCertSigAlgName() const;
+
   /* Get the number of bytes read from the wire (including protocol
    * overhead). Returns 0 once the connection has been closed.
    */
